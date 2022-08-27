@@ -22,6 +22,9 @@ const corsOptions = {
 }
 app.use(cors(corsOptions));
 
+app.get('/', (req, res) => {
+  res.send("ㅎㅇ")
+})
 app.get('/api/:id', (req, res) => {
 fetch("https://playentry.org/graphql", {
   "headers": {
