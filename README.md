@@ -1,5 +1,4 @@
 # dut_api
-## api for ent2.ml
 ent2.ml을 위한 유저 정보 api입니다.
 
 # how to
