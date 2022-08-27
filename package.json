@@ -1,4 +1,12 @@
 {
+  "version": 2,
+   "name": "ent2-api",
+  "builds": [
+      { "src": "app.js", "use": "@vercel/node" }
+   ],
+   "routes": [
+      { "src": "/(.*)", "dest": "/app.js" }
+   ],
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.1",
