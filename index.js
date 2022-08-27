@@ -23,7 +23,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.get('/', (req, res) => {
-  res.send("ㅎㅇ")
+  res.send("/api/유저id 로 get 요청을 보내세요(json)")
 })
 app.get('/api/:id', (req, res) => {
 fetch("https://playentry.org/graphql", {
