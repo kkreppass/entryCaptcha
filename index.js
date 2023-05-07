@@ -1,6 +1,6 @@
-const express = require('express');
-const fetch = require('node-fetch');
-const cors = require('cors');
+import express from 'express'
+import fetch from 'node-fetch'
+import cors from 'cors'
 let csrf = '';
 let body = '';
 async function getCookie ()  {
@@ -23,9 +23,9 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.get('/', (req, res) => {
-  res.send("/api/유저id 로 get 요청을 보내세요(json)")
+  res.send("/profile/유저id 로 get 요청을 보내세요(json)")
 })
-app.get('/api/:id', (req, res) => {
+app.get('/profile/:id', (req, res) => {
 fetch("https://playentry.org/graphql", {
   "headers": {
     "content-type": "application/json",
@@ -38,6 +38,9 @@ fetch("https://playentry.org/graphql", {
   .then(d=>d.text())
   .then(d=>res.json(JSON.parse(d)))
 })
+
+
+
 app.listen(3000, () => {
   console.log('server running!');
 })
