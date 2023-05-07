@@ -6,5 +6,5 @@ ent2.ml을 위한 유저 정보 api입니다.
 
 예시
 ```
-fetch('https://userdata.atobe.repl.co/profile/62e0f3af3d80d5006290ab89').then(r=>r.json()).then(r=>console.log(r))
+fetch('https://dut-api-atobe1108.vercel.app/profile/62e0f3af3d80d5006290ab89').then(r=>r.json()).then(r=>console.log(r))
 ```
