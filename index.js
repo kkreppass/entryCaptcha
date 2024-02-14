@@ -6,11 +6,9 @@ let body = '';
 async function getCookie ()  {
   csrf = await fetch("https://playentry.org");
   body = await csrf.text();
-  console.log(1)
 }
 getCookie()
 .then(()=>{
-console.log(2)
 const cookie = csrf.headers.get('set-cookie');
 console.log(cookie);
 const index = body.indexOf("csrf-token") + 21;
