@@ -4,10 +4,10 @@ captcha api
 # how to
 get
 ```
-fetch('/captcha')
+fetch('https://entrycaptcha.vercel.app/captcha')
 ```
 
 confirm
 ```
-fetch('/confirm?k=key&v=inputvalue')
+fetch('https://entrycaptcha.vercel.app/confirm?k=key&v=inputvalue')
 ```
